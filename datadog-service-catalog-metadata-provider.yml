@@ -1,0 +1,12 @@
+---
+
+org: arcxp
+
+rules:
+  # This should require all service catalog definitions to
+  # contain an `env` tag.
+  - name: Simple Requirements
+    selection: all
+    requirements:
+      - tags
+        - env
