@@ -8,5 +8,5 @@ rules:
   - name: Simple Requirements
     selection: all
     requirements:
-      - tags
+      - tags:
         - env
