@@ -17,5 +17,5 @@ rules:
       - tags:
         - env: "prod"
     requirements:
-      - links
+      - links:
         - type: "runbook"
