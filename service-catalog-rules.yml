@@ -10,3 +10,12 @@ rules:
     requirements:
       - tags:
         - env
+
+  # Everything that runs in production must have a runbook
+  - name: Prod needs a runbook
+    selection:
+      - tags:
+        - env: "prod"
+    requirements:
+      - links
+        - type: "runbook"
