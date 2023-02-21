@@ -1,0 +1,6 @@
+The purpose of this file is to verify that the Datadog Service Catalog Metadata Provider handles bad org rules files predictably.
+
+this
+  is
+    invalid
+-yaml
