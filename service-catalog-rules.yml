@@ -9,13 +9,13 @@ rules:
     selection: all
     requirements:
       - tags:
-        - env
+        - internet_accessible
 
   # Everything that runs in production must have a runbook
   - name: Prod needs a runbook
     selection:
       - tags:
-        - env: "prod"
+        - internet_accessible: "yes"
     requirements:
       - links:
         - type: "runbook"
