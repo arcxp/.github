@@ -8,14 +8,14 @@ rules:
   - name: Simple Requirements
     selection: all
     requirements:
-      - tags:
-        - internet_accessible
+      tags:
+        internet_accessible: ANY
 
   # Everything that runs in production must have a runbook
   - name: Prod needs a runbook
     selection:
-      - tags:
-        - internet_accessible: "yes"
+      tags:
+        internet_accessible: "yes"
     requirements:
-      - links:
-        - type: "runbook"
+      links:
+        type: "runbook"
